@@ -1,0 +1,86 @@
+/* 
+1st
+Text Modifiers in this case Text Modifiers will be recognized by "tm"
+for example tmfs would refer to font size tmfst for font style
+then with these specifications seperate the defining piece of the modifier with an underscore
+tmfs_lrg(for example)
+tm followed by an underscore will be reserved for simple common single appearance change
+like tm_tl for "top-line" for a bold and large modifier for the "about me" places on websites
+
+*/
+    .tm_tl{
+        font-weight: bold;
+        font-size: large;
+    }
+
+
+/*tmfs*/
+    .tmfs_s{
+        font-size: small;
+    }
+
+    .tmfs_m{
+        font-size: medium;
+    }
+
+    .tmfs_l{
+        font-size: large;
+    }
+
+
+/*tmfst*/
+    .tmfst_it{
+        font-style: italic;
+    }
+
+
+
+
+/*
+Basic margin modifiers "mm". this is will be more helpful once its more fleshed out and each margin preset also has subclasses 
+so ideally we can get it detailed enough to have two toned color boxes around our <div> or whatever with two classes
+cant seem to get these to work
+*/
+    .mm_s{
+        margin: 35px;
+    }
+        .mm_s_blu{
+            margin: 35px;
+            background-color: blue;
+        }
+
+    .mm_l{
+        margin: 100px;
+    }
+
+
+
+
+/*
+Fonts will stand alone generally
+fnt_
+*/
+    .fnt_tnr{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .fnt_ls{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .fnt_apl{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+/*Picture size modifiers "ps" numbers for size in roman numerals pixel # devided by 100*/
+    .ps_iixiv{
+      width: 200px;
+      height: 400px;
+        object-fit: cover;
+    }
+
+    .ps_iixii{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
